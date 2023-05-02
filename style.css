@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Home Page*/
+body {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(backgroun.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+}
+
+.logo {
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	user-select: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navigation a {
+	position: relative;
+	font-size: 1.1em;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+.navigation a::after {
+
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	bottom: -6px;
+	background-color: #fff;
+	border-radius: 3px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: .1s;
+}
+
+.navigation a:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+
+	background: #fff;
+	color: #162938;
+}
+
+/* About Page*/
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(background2.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.logo2 {
+	font-size: 2em;
+	color: rgb(245, 3, 3);
+	user-select: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navigation2 a {
+	position: relative;
+	font-size: 1.1em;
+	color: #733532;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+.navigation2 a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	bottom: -6px;
+	background-color: rgb(248, 0, 0);
+	border-radius: 3px;
+	transform: scaleX(0);
+	transition: .1s;
+}
+
+.navigation2 a:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+.navigation2 .btnlogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #f39302;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #000000;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+.navigation2 .btnlogin-popup:hover {
+
+	background: #f39302;
+	color: #000000;
+}
+
+.login-box {
+	width: 25%;
+	background: transparent;
+	backdrop-filter: blur(7px);
+	margin: 40px auto;
+
+}
+
+.main-form {
+	width: 100%;
+	border: 2px solid #d4d644;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.main-form .avater-img {
+	width: 100%;
+	text-align: center;
+}
+
+.main-form .avater-img .avater {
+	margin: 50px 0px 05px 0px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 3px solid #c70e0e;
+	align-items: center;
+
+}
+
+.main-form h2 {
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 400px;
+	text-align: center;
+	margin: 0px 30px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.main-form .form-group {
+	width: 100%;
+	margin: 20px 0px;
+	padding: 0px 10px;
+}
+
+.main-form .form-group label {
+	display: block;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0px 0px 5px 1px;
+	color: #29271c;
+}
+
+.main-form .form-group input {
+	width: 100%;
+	height: 50%;
+	padding: 10px;
+}
+
+.main-form .form-group .btn-btn {
+	width: 30%;
+	border-radius: 05px;
+	border: 1px solid rgb(0, 0, 0);
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+}
+
+.main-form .form-group .btn-btn:hover {
+	border: 1px solid rgb(255, 255, 255);
+	background: #d61919;
+	color: #000000;
+	transition: 1.5s;
+	cursor: pointer;
+}
+
+.social-icons {
+	width: 100%;
+	padding: 25px 0px;
+}
+
+.social-icons .icon {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.social-icons .icon li {
+	display: inline-block;
+	list-style: none;
+}
+
+.social-icons .icon li a {
+	display: block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 20px;
+	margin: 0px 9px;
+	background: #ce0d0d;
+	color: #fff;
+	border: 1px solid white;
+	border-radius: 50%;
+	transition: 1.3s;
+}
+
+.social-icons .icon li a:hover {
+	font-size: 20px;
+	color: #ff3c00;
+	background: #ffffff;
+	border-radius: 50%;
+}
